@@ -3,12 +3,10 @@ import streamlit as st
 #Emojis https://www.webfx.com/tools/emoji-cheat-sheet/
 st.set_page_config(page_title="Main Page", page_icon=":heart:", layout="wide")
 
+
 st.title("Main page")
 st.sidebar.success("Will be updated later...")
-st.sidebar.header("""
-My projects:
 
-""")
 #Header section
 with st.container():
     st.subheader("Hello, I am Joonatan :wave:")
@@ -33,5 +31,10 @@ with st.container():
         """)
 
 
+link = '[Projects: ](https://turtlesaurusprojects.streamlit.app/)'
+st.markdown(link, unsafe_allow_html=True)
+st.sidebar.header("""
+My projects:
 
+""" + link)
 
