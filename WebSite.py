@@ -1,8 +1,5 @@
-from PIL import Image
 import  requests
 import streamlit as st
-import bokeh.plotting
-from bokeh.models import ColumnDataSource
 #Emojis https://www.webfx.com/tools/emoji-cheat-sheet/
 st.set_page_config(page_title="MyWebpage", page_icon=":pray:", layout="wide")
 
