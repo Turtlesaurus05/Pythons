@@ -19,7 +19,7 @@ with st.container():
     st.subheader("Alexa 2.0")
     st.write("""
 
-    We all know Alexa the expensive amazon ai. Well i made my own Alexa for absolutely free! Want it to play a song from youtube? No problem just say 'Alexa play Ariana grande'")
+    We all know Alexa the expensive amazon ai. Well i made my own Alexa for absolutely free! Want it to play a song from youtube? No problem just say 'Alexa play Ariana grande'
     """)
     st.write("https://github.com/Turtlesaurus05/Pythons/blob/master/MyAlexa.py")
     #Sidebar list:
