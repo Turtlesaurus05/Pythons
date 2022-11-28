@@ -1,21 +1,11 @@
 from PIL import Image
 import  requests
 import streamlit as st
-from streamlit_lottie import st_lottie
-from bokeh.plotting import figure
+import bokeh.plotting
 from bokeh.models import ColumnDataSource
 #Emojis https://www.webfx.com/tools/emoji-cheat-sheet/
 st.set_page_config(page_title="MyWebpage", page_icon=":pray:", layout="wide")
 
-def load_lottieurl(url):
-    r = requests.get(url)
-    if r.status_code != 200:
-        return none
-    return r.json()
-
-#Assets
-lottie_coding = load_lottieurl("https://assets7.lottiefiles.com/private_files/lf30_zSGy1w.json")
-img_contact_form = Image.open("Images/Randompassgen.PNG")
 
 #Header section
 with st.container():
@@ -40,8 +30,6 @@ with st.container():
         - I am a second year student at Careeria and i am studying to be a software engineer.        
         """)
 
-    with right_column:
-        st_lottie(lottie_coding, height=300, key="coding")
 
         with st.container():
             st.write("---")
