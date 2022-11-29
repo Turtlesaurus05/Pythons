@@ -4,7 +4,7 @@ import streamlit as st
 st.set_page_config(page_title="Projects", page_icon=":blue_heart:", layout="wide")
 
 st.markdown("# My projects!")
-st.sidebar.success("Select the site you would wanna go to:")
+st.sidebar.success("Change site : ")
 st.write(
     """ Welcome to my projects   
     """
